@@ -28,7 +28,6 @@ export {
   movies,
   hydra,
   insurance,
-  graphql,
   github,
   tailwind,
   html,
