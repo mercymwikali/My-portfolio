@@ -4,9 +4,7 @@ import { insurance } from '../assets/index'
 import { Grocery } from '../assets/index'
 import { movies } from '../assets/index'
 import { MdExpandMore } from "react-icons/md";
-import { Link } from "react-scroll";
-
-
+// import { Link } from "react-scroll";
 
 const Portfolio = () => {
   const portfolios = [
@@ -14,7 +12,7 @@ const Portfolio = () => {
       id: 1,
       title: "Grocery-website",
       src: Grocery,
-      url: "https://havilapro.com/-weather",
+      url: "https://havilapro.com/",
     },
     {
       id: 2,
@@ -43,11 +41,16 @@ const Portfolio = () => {
           portfolio
         </h2>
         <p className="py-6 max-w-lg font-medium">
-        Check out my portfolio for interactive interfaces. </p>.
+          Check out my portfolio for interactive interfaces. </p>.
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(({ id, title, src, url }) => (
-            <Link key={id} href={`/portfolio/${url}`}>
+            <a
+              key={id}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
                 <img
                   src={src}
@@ -59,19 +62,22 @@ const Portfolio = () => {
                   {title}
                 </h2>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
-
         <div className="flex items-center justify-center">
-          <Link href="https://github.com/mercymwikali?tab=repositories">
+          <a
+            href="https://github.com/mercymwikali?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="group flex items-center justify-center my-8 bg-orange-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               all projects
               <span className="-rotate-90 duration-100 ease-in group-hover:translate-x-5">
                 <MdExpandMore size={25} />
               </span>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

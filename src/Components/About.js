@@ -5,11 +5,11 @@ import { MdExpandMore } from 'react-icons/md'
 const About = () => {
     return (
         <div id='about' className='w-full'>
-            <div className='max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left'>
-                <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-orange-500 font-bold inline border-b-4 border-gray-400">
-                    me
+            <div className='max-w-screen-xl mx-auto m py-0 md:py-16 text-center md:text-left'>
+                <h2 className="text-4xl md:text-7xl tracking-wider uppercase text-orange-500 font-bold inline border-b-4 border-gray-400">
+                    about me
                 </h2>
-                <div className="shadow-xl shadow-orange-300 my-8 px-8">
+                <div className="shadow-xl shadow-orange-300 my-8 py-4 px-2 md:px-8">
                     <p className="py-4 max-w-2xl mx-auto">
                         As a front-end developer, I specialize in using modern technologies
                         to build robust and scalable applications. React is my go-to framework
@@ -26,8 +26,6 @@ const About = () => {
                         Apart from my technical skills, I also value collaboration and communication.
                         Working in a team allows me to combine my creativity with others' expertise,
                         resulting in well-rounded and successful projects
-
-
                     </p>
                     <p className="py-4 max-w-2xl mx-auto">
                         As I continue my journey as a front-end developer, I look forward to taking on
@@ -36,29 +34,30 @@ const About = () => {
                         create innovative and impactful web applications that make a difference in people's
                     </p>
                 </div>
-
                 <div className="flex items-center justify-center gap-10">
-                    <Link href="/public/resume.pdf" download={true}>
-                        <div className="group flex items-center justify-center my-8 bg-orange-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+                    <a
+                        href='/resume.pdf' // Replace this with the correct path to your resume PDF within the "public" folder
+                        download
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <div className='group flex items-center justify-center my-8 bg-orange-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer'>
                             resume
-                            <span className="-rotate-90 duration-100 ease-in group-hover:rotate-0">
+                            <span className='-rotate-90 duration-100 ease-in group-hover:rotate-0'>
                                 <MdExpandMore size={25} />
                             </span>
                         </div>
-                    </Link>
-
-                    <Link href="/#experience">
-                        <div className="group flex items-center justify-center my-8 bg-orange-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
-                            my portfolio
+                    </a>
+                    <Link to="portfolio" smooth duration={500}>
+                        <div className="group flex items-center justify-center my-8 bg-orange-500 text-white px-8 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+                            projects
                             <span className="-rotate-90 duration-100 ease-in group-hover:-rotate-180">
                                 <MdExpandMore size={25} />
                             </span>
                         </div>
                     </Link>
                 </div>
-
             </div>
-
         </div>
     )
 }

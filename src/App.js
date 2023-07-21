@@ -10,7 +10,7 @@ import Contact from './Components/Contact';
 function App() {
   return (
     <div className="w-full h-auto bg-neutral-800 text-gray-300">
-      <div className='max-w-screen-2xlg '>
+      <div className='max-w-screen-2xl mx-4 px-4'>
         <Nav/>
         <Home/>
         <About/>
