@@ -37,7 +37,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-orange-500 font-bold inline border-b-4 border-gray-400">
+        <h2 className="text-4xl md:text-6xl tracking-wider uppercase text-orange-500 font-bold inline border-b-4 border-gray-400">
           portfolio
         </h2>
         <p className="py-6 max-w-lg font-medium">
