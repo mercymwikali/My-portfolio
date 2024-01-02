@@ -53,7 +53,7 @@ const Contact = () => {
                         <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
                             {socialinks.map((socialink) => (
                                 <li key={socialink.id}>
-                                    <SocialLink {...socialink} />
+                                    <SocialLink {...socialink} className="no-underline" />
                                 </li>
                             ))}
                         </div>

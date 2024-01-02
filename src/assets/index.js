@@ -14,7 +14,8 @@ import html from "./images/html.png"
 import css from "./images/css.png"
 import github from "./images/github.png"
 import contact from "./images/contact.jpg"
-
+import judiciary from "./images/judiciary.png"
+import hospital from "./images/hospital.png"
 
 
 
@@ -37,5 +38,6 @@ export {
   css,
   react,
   contact,
-
+judiciary,
+hospital
 };

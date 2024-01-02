@@ -9,7 +9,7 @@ const Home = () => {
       <div className=' max-w-screen-xl mx-auto w-full h-full  p-4 flex flex-col md:flex-row justify-around items-center'>
         <div className=' md:w-3/4'>
           <h2 className=' uppercase font-bold text-white text-5xl leading-snug'>I am Full Stack Developer</h2>
-          <p className='text-white-600 text-base py-4  mx-auto'> Hi...<br /> My name is Mercy and I am self-taught software developer with two years of experience. My passion lies in web development, where I bring designs to life by building intuitive user interfaces using web technologies such as React, Tailwind and Next.js.</p>
+          <p className='text-white-600 text-base py-4  mx-auto'> Hi...<br />My name is Mercy Mwikali and I am a passionate Front-end Developer dedicated to crafting exceptional User Experiences. Proficient in HTML, CSS, and JavaScript, I thrive on creating efficient and visually appealing web interfaces. My expertise extends to React and Vue frameworks, with a solid foundation in back-end technologies like NodeJS and databases such as MySQL, MS SQL, and MongoDB.</p>
           <Link to="portfolio" smooth duration={500}>
             <div className="group flex items-center justify-center mt-8 bg-gradient-to-r from bg-orange-700 to-orange-600 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               Portfolio

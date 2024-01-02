@@ -1,8 +1,9 @@
 import React from "react";
-import { hydra } from '../assets/index'
+import { hospital, hydra } from '../assets/index'
 import { insurance } from '../assets/index'
 import { Grocery } from '../assets/index'
 import { movies } from '../assets/index'
+import { judiciary } from "../assets/index";
 import { MdExpandMore } from "react-icons/md";
 // import { Link } from "react-scroll";
 
@@ -31,6 +32,18 @@ const Portfolio = () => {
       title: "insurance-landing",
       src: insurance,
       url: "https://insurance-landing.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Judiciary prototype Staff Portal",
+      src: judiciary,
+      url: "https://judiciary-iota.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Hospital System",
+      src: hospital,
+      url: "https://hospital-mgt.vercel.app/addPatient",
     },
   ];
 
